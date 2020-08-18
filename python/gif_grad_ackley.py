@@ -38,11 +38,11 @@ levels = np.arange(0.0, 15.0, 1)
 CS = plt.contour(X, Y, Z, levels=levels)
 plt.clabel(CS, inline=1, fontsize=10)
 
-A = [-0.5, -0.5]
+A = [-1, -0.5]
 B = [0.2, -1.7]
 C = [4.2, 0.4]
-D = [-4, -0.6]
-E = [-2.5, 2.5]
+D = [-3.5, -0.6]
+E = [-2.6, 2.3]
 
 ax.plot(A[0], A[1], 'bo')
 ax.plot(B[0], B[1], 'ro')
@@ -97,7 +97,7 @@ for iter in range(epochs):
     E[0] = E[0] - learning_rate * derivative_x(E[0], E[1])
     E[1] = E[1] - learning_rate * derivative_y(E[0], E[1])
 
-div = 5
+div = 10
 #for i in range(0, epochs//10):
 def animate(i):
     # https://stackoverflow.com/questions/509211/understanding-slice-notation
