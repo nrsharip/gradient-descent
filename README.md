@@ -25,6 +25,7 @@ The intention of this project is to review and implement the existing Gradient D
 
 <table>
   <tr>
+    <td><img src="/python/images/grad-ackley.gif?raw=true" width="100%"></td>
     <td><img src="/python/images/grad-f1.gif?raw=true" width="100%"></td>
     <td><img src="/python/images/grad-himmelblau.gif?raw=true" width="100%"></td>
   </tr>
