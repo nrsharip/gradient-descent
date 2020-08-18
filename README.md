@@ -1,5 +1,5 @@
 ## Overview
-The intention of this project is...
+The intention of this project is to review and implement the existing Gradient Descent optimization algorithms.
 
 ## Test Functions
 
