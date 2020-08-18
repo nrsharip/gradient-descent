@@ -15,7 +15,7 @@ def grad_descent_function(x,y):
 
 delta = 0.01
 x = np.arange(-3.0, 3.0, delta)
-y = np.arange(-3.0, 2.0, delta)
+y = np.arange(-4.0, 2.0, delta)
 
 # https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html
 X, Y = np.meshgrid(x, y)

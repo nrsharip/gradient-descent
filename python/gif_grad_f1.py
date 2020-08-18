@@ -20,11 +20,11 @@ def der_x(x,y):
 def der_y(x,y):
     a = 0.5*x*x - 0.25*y*y + 3
     b = 2*x + 1 - math.exp(y)
-    return 0.5 * y * math.cos(a) * math.cos(b) + math.exp(y) * math.sin(a) * math.sin(b)
+    return -0.5 * y * math.cos(a) * math.cos(b) + math.exp(y) * math.sin(a) * math.sin(b)
 
 delta = 0.01
 x = np.arange(-3.0, 3.0, delta)
-y = np.arange(-3.0, 2.0, delta)
+y = np.arange(-4.0, 2.0, delta)
 
 # https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html
 X, Y = np.meshgrid(x, y)
@@ -65,7 +65,7 @@ e_history = [[],[]]
 #epochs = 300
 
 learning_rate = 0.005
-epochs = 1000
+epochs = 2000
 
 for iter in range(epochs):
     #ax.plot(A[0], A[1], 'bo')
@@ -95,7 +95,7 @@ for iter in range(epochs):
     E[0] = E[0] - learning_rate * der_x(E[0], E[1])
     E[1] = E[1] - learning_rate * der_y(E[0], E[1])
 
-div = 50
+div = 100
 #for i in range(0, epochs//10):
 def animate(i):
     # https://stackoverflow.com/questions/509211/understanding-slice-notation
