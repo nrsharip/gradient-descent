@@ -59,3 +59,15 @@ The intention of this project is to review and implement the existing Gradient D
     <td><img src="/python/images/nag-himmelblau-gamma-999.gif?raw=true" width="100%"></td>
   </tr>
 </table>
+
+## AdaGrad — Adaptive Gradient
+
+[wiki](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#AdaGrad)
+
+<table>
+  <tr>
+    <td><img src="/python/images/adagrad-ackley.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/adagrad-f1.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/adagrad-himmelblau.gif?raw=true" width="100%"></td>
+  </tr>
+</table>
