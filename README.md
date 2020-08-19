@@ -71,3 +71,32 @@ The intention of this project is to review and implement the existing Gradient D
     <td><img src="/python/images/adagrad-himmelblau.gif?raw=true" width="100%"></td>
   </tr>
 </table>
+
+## RMSProp - Root Mean Square Propagation
+
+<table>
+  <tr>
+    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.75" title="\gamma=0.995"/></td>
+  </tr>
+  <tr>
+    <td><img src="/python/images/rmsprop-ackley-gamma-075.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-f1-gamma-075.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-himmelblau-gamma-075.gif?raw=true" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.80" title="\gamma=0.995"/></td>
+  </tr>
+  <tr>
+    <td><img src="/python/images/rmsprop-ackley-gamma-080.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-f1-gamma-080.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-himmelblau-gamma-080.gif?raw=true" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.85" title="\gamma=0.995"/></td>
+  </tr>
+  <tr>
+    <td><img src="/python/images/rmsprop-ackley-gamma-085.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-f1-gamma-085.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-himmelblau-gamma-085.gif?raw=true" width="100%"></td>
+  </tr>
+</table>
