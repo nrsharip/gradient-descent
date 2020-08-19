@@ -76,27 +76,19 @@ The intention of this project is to review and implement the existing Gradient D
 
 <table>
   <tr>
-    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.75" title="\gamma=0.995"/></td>
+    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.90" title="\gamma=0.90"/></td>
   </tr>
   <tr>
-    <td><img src="/python/images/rmsprop-ackley-gamma-075.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-f1-gamma-075.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-himmelblau-gamma-075.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-ackley-gamma-090.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-f1-gamma-090.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-himmelblau-gamma-090.gif?raw=true" width="100%"></td>
   </tr>
   <tr>
-    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.80" title="\gamma=0.995"/></td>
+    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.95 " title="\gamma=0.95"/></td>
   </tr>
   <tr>
-    <td><img src="/python/images/rmsprop-ackley-gamma-080.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-f1-gamma-080.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-himmelblau-gamma-080.gif?raw=true" width="100%"></td>
-  </tr>
-  <tr>
-    <td align="center" colspan = 3><img src="https://latex.codecogs.com/svg.latex?\gamma=0.85" title="\gamma=0.995"/></td>
-  </tr>
-  <tr>
-    <td><img src="/python/images/rmsprop-ackley-gamma-085.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-f1-gamma-085.gif?raw=true" width="100%"></td>
-    <td><img src="/python/images/rmsprop-himmelblau-gamma-085.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-ackley-gamma-095.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-f1-gamma-095.gif?raw=true" width="100%"></td>
+    <td><img src="/python/images/rmsprop-himmelblau-gamma-095.gif?raw=true" width="100%"></td>
   </tr>
 </table>
