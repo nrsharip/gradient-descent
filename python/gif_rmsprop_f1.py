@@ -31,7 +31,7 @@ X, Y = np.meshgrid(x, y)
 Z = grad_descent_function(X,Y)
 
 # https://stackoverflow.com/questions/332289/how-do-you-change-the-size-of-figures-drawn-with-matplotlib
-fig, ax = plt.subplots(figsize=[15, 15])
+fig, ax = plt.subplots(figsize=[10, 10])
 levels = np.arange(-1.0, 1.0, 0.1)
 CS = ax.contour(X, Y, Z, levels=levels)
 plt.clabel(CS, inline=1, fontsize=10)
