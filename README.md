@@ -44,6 +44,22 @@ Below are 3D surface, contour and 3D animation plots of these functions respecti
 
 ## Gradient Descent
 
+See: 
+- [`gif_grad_ackley.py`](python/gif_grad_ackley.py)
+- [`gif_grad_f1.py`](python/gif_grad_f1.py.py)
+- [`gif_grad_himmelblau.py`](python/gif_grad_himmelblau.py.py)
+
+Example for point A:
+```
+learning_rate = 0.001
+epochs = 150
+
+for iter in range(epochs):
+    ...
+    A[0] = A[0] - learning_rate * derivative_x(A[0], A[1])
+    A[1] = A[1] - learning_rate * derivative_y(A[0], A[1])
+```
+
 <table>
   <tr>
     <td><img src="/python/images/grad-ackley.gif?raw=true" width="100%"></td>
@@ -53,6 +69,28 @@ Below are 3D surface, contour and 3D animation plots of these functions respecti
 </table>
 
 ## Nesterov Accelerated Gradient
+
+See: 
+- [`gif_nag_ackley.py`](python/gif_nag_ackley.py)
+- [`gif_nag_f1.py`](python/gif_nag_f1.py.py)
+- [`gif_nag_himmelblau.py`](python/gif_nag_himmelblau.py.py)
+
+Example for point A:
+```
+learning_rate = 0.005
+epochs = 5000
+gamma = 0.997
+
+delta_A = [0,0]
+
+for iter in range(epochs):
+    ...
+    delta_A[0] = gamma*delta_A[0] + (1 - gamma) * learning_rate * derivative_x(A[0], A[1])
+    delta_A[1] = gamma*delta_A[1] + (1 - gamma) * learning_rate * derivative_y(A[0], A[1])
+    
+    A[0] = A[0] - delta_A[0]
+    A[1] = A[1] - delta_A[1]
+```
 
 <table>
   <tr>
@@ -83,7 +121,28 @@ Below are 3D surface, contour and 3D animation plots of these functions respecti
 
 ## AdaGrad — Adaptive Gradient
 
-[wiki](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#AdaGrad)
+See: 
+- [`gif_adagrad_ackley.py`](python/gif_adagrad_ackley.py)
+- [`gif_adagrad_f1.py`](python/gif_adagrad_f1.py.py)
+- [`gif_adagrad_himmelblau.py`](python/gif_adagrad_himmelblau.py.py)
+- [wiki](https://en.wikipedia.org/wiki/Stochastic_gradient_descent#AdaGrad)
+
+Example for point A:
+```
+learning_rate = 0.5
+epochs = 30
+
+diag_G_A = [0,0]
+
+for iter in range(epochs):
+    ...
+    diag_G_A[0] = diag_G_A[0] + (derivative_x(A[0], A[1]))**2
+    diag_G_A[1] = diag_G_A[1] + (derivative_y(A[0], A[1]))**2
+    
+    A[0] = A[0] - learning_rate * (1/math.sqrt(diag_G_A[0])) * derivative_x(A[0], A[1])
+    A[1] = A[1] - learning_rate * (1/math.sqrt(diag_G_A[1])) * derivative_y(A[0], A[1])
+```
+
 
 <table>
   <tr>
@@ -94,6 +153,29 @@ Below are 3D surface, contour and 3D animation plots of these functions respecti
 </table>
 
 ## RMSProp - Root Mean Square Propagation
+
+See: 
+- [`gif_rmsprop_ackley.py`](python/gif_rmsprop_ackley.py)
+- [`gif_rmsprop_f1.py`](python/gif_rmsprop_f1.py.py)
+- [`gif_rmsprop_himmelblau.py`](python/gif_rmsprop_himmelblau.py.py)
+
+Example for point A:
+```
+learning_rate = 0.2
+epochs = 50
+gamma = 0.90
+
+# a running average of the magnitudes of recent gradients
+grad_ra_A = [0,0]
+
+for iter in range(epochs):
+    ...
+    grad_ra_A[0] = gamma * grad_ra_A[0] + (1 - gamma) * (derivative_x(A[0], A[1]))**2
+    grad_ra_A[1] = gamma * grad_ra_A[1] + (1 - gamma) * (derivative_y(A[0], A[1]))**2
+    
+    A[0] = A[0] - learning_rate * (1/math.sqrt(grad_ra_A[0])) * derivative_x(A[0], A[1])
+    A[1] = A[1] - learning_rate * (1/math.sqrt(grad_ra_A[1])) * derivative_y(A[0], A[1])
+```
 
 <table>
   <tr>
